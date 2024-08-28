@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a {
+        text-decoration: none
+    }
+
+    body {
+        background-size: 20%;
+        background-image: url(bind.jpeg);
+    }
+
+    .dark{
+        background-image: url(jays);
+    }
+
+    nav {
+        width: 500px;
+        height: 65px;
+        background-color: rgba(174, 186, 0, 0.436);
+        position: fixed;
+        bottom: 0px;
+        margin-left: 382px;
+    }
+
+    .ae {
+        position: fixed;
+        font-size: 40px;
+        bottom: 5px;
+        left: 400px;
+    }
+
+    .be {
+        position: fixed;
+        font-size: 40px;
+        bottom: 5px;
+        left: 535px;
+    }
+
+    .ce {
+        position: fixed;
+        font-size: 40px;
+        bottom: 5px;
+        left: 670px;
+    }
+
+    .de {
+        position: fixed;
+        font-size: 40px;
+        bottom: 5px;
+        left: 810px;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div.container {
+        min-width: 300px;
+        max-width: 500px;
+        margin: 0px auto;
+    }
+
+    section.page {
+        width: 100%;
+        min-height: 100vh;
+        margin-bottom: 5px;
+        background-color: rgb(227, 211, 174);
+        display: flex;
+        flex-direction:column ;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    section.page.dark {
+        width: 100%;
+        min-height: 100vh;
+        margin-bottom: 5px;
+        background-color: darkblue;
+        display: flex;
+        flex-direction:column ;
+        justify-content:center;
+        align-items: center;
+    }
+
+
+
+    .sekwer {
+        width: 400px;
+        height: 500px;
+        margin: 0px auto;
+        background-image: url(Screenshot\ \(197\).png);
+        background-position-x: center;
+        background-position-y: 700px;
+        border: 4px gold solid;
+    }
+
+    .sekwer.dark {
+        width: 400px;
+        height: 500px;
+        margin: 0px auto;
+        background-image: url(Screenshot\ \(197\).png);
+        background-position-x: center;
+        background-position-y: 700px;
+        border: 4px rgb(102, 0, 255) solid;
+    }
+
+    section.page > div > p, section.page > div > h1 {
+        text-align: center;
+    }
+
+    section.page.one {
+        gap: 50pt;
+    }
+
+    section.page.one > div > h1 {
+        font-size: 30pt;
+    }
+
+    section.page.two {
+        justify-content: space-evenly;
+        padding: 30pt;
+    }
+
+    section.page.three {
+        justify-content: space-evenly;
+        padding: 30pt;
+    }
+
+    div.card {
+        padding: 10pt;
+        width: 250pt;
+        min-height: 300pt;
+        background-color: rgb(216, 200, 159);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    div.card.dark {
+        padding: 10pt;
+        width: 250pt;
+        min-height: 300pt;
+        background-color: rgb(0, 0, 100);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .page.three div.card.dark {
+        padding: 10pt;
+        width: 250pt;
+        min-height: 300pt;
+        background-color: rgb(0, 0, 100);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    section.page.two div.circle {
+        width: 150pt;
+        height: 150pt;
+        border-radius: 75pt;
+        background-image: url(kenya.jpeg);
+        background-position: center;
+        background-size: 160%;
+        margin-bottom: 50px;
+        border: 4px rgb(230, 220, 195) solid;
+    }
+
+    section.page.two div.circle.dark {
+        width: 150pt;
+        height: 150pt;
+        border-radius: 75pt;
+        background-image: url(kenya.jpeg);
+        background-position: center;
+        background-size: 160%;
+        margin-bottom: 50px;
+        border: 4px darkblue solid;
+    }
+
+    section.page.three div.circle {
+        width: 150pt;
+        height: 150pt;
+        border-radius: 75pt;
+        background-image: url(galan.jpeg);
+        background-position: center;
+        background-size: 160%;
+        margin-bottom: 50px;
+        border: 4px rgb(230, 220, 195) solid;
+    }
+
+    section.page.three div.circle.dark {
+        width: 150pt;
+        height: 150pt;
+        border-radius: 75pt;
+        background-image: url(galan.jpeg);
+        background-position: center;
+        background-size: 160%;
+        margin-bottom: 50px;
+        border: 4px darkblue solid;
+    }
+
+    div.line {
+        width: 200px;
+        height: 3px;
+        background-color: black;
+        margin: 10px auto;
+    }
+
+    .guest-name {
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        border: white 1px auto;
+        border-radius: 20px;
+        padding-top: 30px;
+    }
+
+    .guest-name.dark {
+        width: 200px;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        border: rgb(0, 0, 0) 1px auto;
+        border-radius: 20px;
+        padding-top: 30px;
+    }
+
+    .date {
+        font-size: larger;
+        text-align: center;
+        font-weight: 200;
+    }
+
+
+
+    body {
+        transition: background-color 1s ease
+    }
+    .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: white;
+        border: 2px solid gray;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    .btn span {
+        font-size: 24px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    body.dark {
+        color:aliceblue;
+        background-image: url(jays.png);
+    }
+
+    .btn span.ireng::after {
+        content:"🌙";
+    }
+
+    .btn span.ireng.dark::after {
+        content: "💡";
+        background-color: white;
+    }
+
+
+</style>
+<body>
+    <nav>
+        <div class="ae"><a href="#oa"><span>🏠</span></a></div>
+        <div class="be"><a href="#ob"><span>👩🏻</span></a></div>
+        <div class="ce"><a href="#oc"><span>🧑🏻</span></a></div>
+        <div class="de"><a href="#od"><span>📌</span></a></div>
+        <div class="btn">
+            <span class="ireng"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="" id="oa"></a>
+        <section class="page one">
+            <div class="title">
+                <div class="date">
+                <p>The Wedding Of</p>
+            </div>
+                <h1>Rizki & Sella</h1><br><br>
+
+                <h1>Save</h1>
+                <h1>the</h1>
+                <h1>Date</h1><br><br>
+                <div class="date">
+                <p>Sunday</p>
+                <p>November 5th, 2023</p>
+            </div>
+            </div>
+
+            <div class="guest-name">
+                <p>Kepada Yth.</p>
+                <p>Djony, Ph.D</p>
+            </div>
+        </section>
+        <a href="" id="ob"></a>
+        <section class="page two">
+            
+            <h1>The Beloved</h1>
+            <h1>Gallant & Kania</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore pariatur, explicabo porro impedit ducimus eius a mollitia eum consequatur, possimus aliquam numquam! Illo eum corporis aperiam, delectus fuga vero minima molestias laudantium unde!</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Sella Noviana</h1>
+                <div class="line"></div>
+                <p>Putri Pertama</p>
+                <p>Bapak Syamsudin</p>
+                <p>&</p>
+                <p>Ibu Sumlati</p>
+            </div>
+        </section>
+        <a href="" id="oc"></a>
+        <section class="page three">
+            <h1>The Beloved</h1>
+            <h1>Gallant & Kania</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum illo delectus tempore ducimus et, labore consequatur reprehenderit numquam suscipit ad ut.</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>M Rizki Arriyansyah</h1>
+                <div class="line"></div>
+                <p>Putra Pertama</p>
+                <p>Bapak Benaya</p>
+                <p>&</p>
+                <p>Ibu Sella</p>
+            </div>
+        </section>
+        </section>
+
+        <section class="page four">
+            <a href="" id="od"></a>
+            <h1>Location</h1>
+            <div class="sekwer"></div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let darkInfo;
+                if(!localStorage.getItem("dark"))
+                    localStorage.setItem("dark", false);
+                darkInfo = JSON.parse(localStorage.getItem("dark"))
+        
+            const switchdark = () => {
+                document.querySelector("body").classList.toggle("dark");
+                document.querySelector(".ireng").classList.toggle("dark");
+                document.querySelector(".page").classList.toggle("dark");
+                document.querySelector(".two").classList.toggle("dark");
+                document.querySelector(".three").classList.toggle("dark");
+                document.querySelector(".four").classList.toggle("dark");
+                document.querySelector(".circle").classList.toggle("dark");
+                document.querySelector(".card").classList.toggle("dark");
+                document.querySelector("section.page.three div.card").classList.toggle("dark");
+                document.querySelector("section.page.three div.circle").classList.toggle("dark");
+                document.querySelector(".guest-name").classList.toggle("dark");
+                document.querySelector(".sekwer").classList.toggle("dark");
+            }
+        
+            if (darkInfo){
+                    switchdark();
+                }
+        
+                document.querySelector(".btn").addEventListener("click", () => {
+                    switchdark()
+                    localStorage.setItem("dark", !darkInfo)
+                })
+        
+            })
+    </script>
+</body>
+</html>
